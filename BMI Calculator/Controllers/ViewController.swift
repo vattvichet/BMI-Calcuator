@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
