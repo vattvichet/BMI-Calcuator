@@ -1,27 +1,19 @@
-//
-//  SecondViewController.swift
-//  BMI Calculator
-//
-//  Created by vichet vatt on 9/5/22.
-//  Copyright © 2022 Angela Yu. All rights reserved.
-//
 
 import UIKit
 
 class SecondViewController : UIViewController {
     
-    var bmiValue = "0.0"
+    var bmiValue = "0" // It will be used at the viewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.gray
         let label = UILabel()
         label.text = bmiValue
-        label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        label.frame = CGRect(x: 10, y: 0, width: 100, height: 50) // the more the height increase, the more it will go down. and also the weight.
         view.addSubview(label)
-        
-     
+
     }
 }
 

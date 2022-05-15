@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  BMI Calculator
-//
-//  Created by Angela Yu on 21/08/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
-//
+
 
 import UIKit
 
@@ -42,11 +36,13 @@ class ViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightSlider.value
         let bmi = weight / (height * height)
-        let secondVC = SecondViewController()
         
-        secondVC.bmiValue = String(format: "%.1f", bmi)
+        let secondVC = SecondViewController() // It is for the second screen display
         
-        self.present(secondVC, animated: true, completion: nil)
+        secondVC.bmiValue = String(format: "%.1f", bmi) // We address the secondVC to display the bmi value
+        
+        self.present(secondVC, animated: true, completion: nil) //Use it to show the second screenView(it pop up)
+        
     }
     
 }
