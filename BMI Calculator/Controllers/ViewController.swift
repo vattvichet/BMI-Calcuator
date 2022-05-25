@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         let height = String(format: "%.2f", sender.value)
         
         heightLabel.text = "\(height)m"
+//        heightLabel.text = UIColor.green
     }
     
     @IBAction func wieghtSliderChanged(_ sender: UISlider) {
@@ -32,7 +33,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        
         let height = heightSlider.value
         let weight = weightSlider.value
         let bmi = weight / (height * height)
